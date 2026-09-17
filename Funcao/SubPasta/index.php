@@ -6,7 +6,7 @@ $Nome = "Arroz";
 $Valor = 10;
 $Quantidade = 5;
 $Desconto = 10;
-$Imposto = 0;
+$Imposto = 100;
 
 $calcular = calcularPedido($Nome, $Valor, $Quantidade, $Desconto, $Imposto);
 
