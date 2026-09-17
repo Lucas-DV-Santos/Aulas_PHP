@@ -11,9 +11,9 @@ $pedidos = [
 ]; 
 
 
-foreach ($pedidos as $pedido => $valor){
-    echo "<b>Produto: </b>" . "<b>" . $valor['nomeProduto'] . "</b>" . "<br>";
-    $calcular = calcularPedido($valor['nomeProduto'], $valor['preco'], $valor['quantidade']);
+foreach ($pedidos as $pedido){
+    echo "<b>Produto: </b>" . "<b>" . $pedido['nomeProduto'] . "</b>". "<br>";
+    $calcular = calcularPedido($pedido['nomeProduto'], $pedido['preco'], $pedido['quantidade']);
     foreach ($calcular as $topico => $valor2){
         echo $topico . ": " . $valor2 . "<br>";
         
