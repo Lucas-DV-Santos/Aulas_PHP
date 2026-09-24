@@ -20,57 +20,77 @@ $carrinho = [
     ]
     ];
 
-    $prodfinal = 0;
-    $soma = 0;
     $valorFinal = 0;
     $desconto = 0;
     $valorBruto = 0;
 
-    echo '<h1> Resumo da compra</h1>';
-    echo '<table border = 1 style="width: 30%;">';
-    echo '<tr style="background-color: lightgray">';
-    echo    '<th colspan="4">Carrinho</th>';
-    echo '</tr>';
-    echo '<tr style="background-color: beige">';
-    echo     '<th rowspan="4">' . $nome . '</th>';
-    echo     '<th>Produto</th>';
-    echo     '<th>Preço</th>';
-    echo     '<th>Quantidade</th>';
-    echo '</tr>';
+?>
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
     
-    foreach ($carrinho as $valor){
-        echo '<tr style="text-align: center">';
-            echo '<td>';
-                echo $valor['produto'];
-            echo '</td>';
+    <header>
+        <h1>Resumo da Compra</h1>
+        
+    </header>
+    <main>
+        <p>Cliente: <?=$nome?></p>
+        <table border="1" style="width: 30%">
+  <thead>
+    <tr>
+      <th colspan="4" style="background-color: lightgray">Compras</th>
+    </tr>
+    <tr style="background-color: beige">
+      <th>Produto</th>
+      <th>Preço</th>
+      <th>Quantidade</th>
+    </tr>
+  </thead>
+  <tbody>
 
-            echo '<td>';
-                echo $valor['preco'];
-            echo '</td>';
-
-            echo '<td>';
-                echo $valor['quantidade'];
-            echo '</td>';
+    <?php
+    foreach($carrinho as $valor){
+        echo '<tr>';
+        echo '<td style="text-align:center">' . $valor['produto'] . '</td>';
+        echo '<td style="text-align:center">' . $valor['preco'] . '</td>';
+        echo '<td style="text-align:center">' . $valor['quantidade'] . '</td>';
         echo '</tr>';
-
-        $prodfinal = $valor['preco'] * $valor['quantidade'];
-        $valorBruto += $prodfinal;
+        $valorBruto += $valor['preco'] * $valor['quantidade'];
     }
+    ?>
 
-    echo '</table>';
+  </tbody>
+</table>
+    </main>
+</body>
+</html>
 
-    
-    if ($valorBruto > 500){
+<?php
+  if ($valorBruto > 500){
         $valorFinal = $valorBruto* 0.90;
-         echo '<br><br>' . 'Desconto de 10% aplicado';
+        echo '<br><br>' . 'Desconto de 10% aplicado';
         $desconto = $valorBruto * 0.10;
     } else{
         $valorFinal = $valorBruto;
         echo '<br><br>' . 'Nenhum desconto aplicado';
     }
-    
-    echo '<p><b>Valor Bruto: R$</b>' . number_format($valorBruto, 2) . '<p>';
-    echo '<p><b>Valor do Desconto: R$</b>' . number_format($desconto, 2) . '</p>';
-    echo '<p><b>Valor Final: R$</b>'  . number_format($valorFinal, 2) . '</p>';
-    echo "<br><br>Obrigado pela compra!!";
 ?>
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    
+</head>
+<body>
+    <p><b>Valor Bruto: R$</b><?=number_format($valorBruto, 2)?></p>
+    <p><b>Desconto: R$</b><?=number_format($desconto, 2)?></p>
+    <p><b>Valor Total: R$</b><?=number_format($valorFinal, 2)?></p>
+    <h2>Origado pela compra!!</h2>
+</body>
+</html>
