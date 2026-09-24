@@ -26,7 +26,7 @@ $carrinho = [
     $desconto = 0;
     $valorBruto = 0;
 
-
+    echo '<h1> Resumo da compra</h1>';
     echo '<table border = 1 style="width: 30%;">';
     echo '<tr style="background-color: lightgray">';
     echo    '<th colspan="4">Carrinho</th>';
@@ -69,7 +69,8 @@ $carrinho = [
         echo '<br><br>' . 'Nenhum desconto aplicado';
     }
     
-    echo '<p>'. '<br>' . '<b>' . 'Valor Bruto: R$' . '</b>' . number_format($valorBruto, 2) . '<p>';
-    echo '<p>' . '<b>' . 'Valor do Desconto: R$' . '</b>' . number_format($desconto, 2) . '</p>';
-    echo '<p>' .  '<b>' . 'Valor Final: R$' . '</b>'  . number_format($valorFinal, 2) . '</p>';
+    echo '<p>   <b>Valor Bruto: R$</b>' . number_format($valorBruto, 2) . '<p>';
+    echo '<p><b>Valor do Desconto: R$</b>' . number_format($desconto, 2) . '</p>';
+    echo '<p><b>Valor Final: R$</b>'  . number_format($valorFinal, 2) . '</p>';
+    echo "<br><br>Obrigado pela compra!!";
 ?>
