@@ -2,8 +2,7 @@
 
 class Produto{
      protected string $nome;
-
-     private string $preco;
+     private int $preco;
 
      public function __construct($nome, $preco){
         $this->nome = $nome;
