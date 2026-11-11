@@ -38,4 +38,5 @@ $notificacao3 = new NotificacaoPush();
 $notificacao3->Enviar("Sua inscrição foi realizada com sucesso!");
 
 
+
 ?>
