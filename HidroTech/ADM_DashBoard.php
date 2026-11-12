@@ -1,14 +1,15 @@
-
-
+<?php session_start()?>
 
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Morador</title>
+    <title>ADM</title>
     <link rel="stylesheet" href="lucas.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <script src="adm.js" defer></script>
 </head>
 <body class="mo_body">
 
@@ -21,7 +22,7 @@
         
                     <li class="mo_nav-item_Active">
                         <div class="DivItem">
-                            <a href="#">
+                            <a href="#" onclick="mostrarInicio()">
                                 <span class="mo_icon"><i class="fa-solid fa-house"></i></span>
                                 <span class="mo_text">Início</span>
                             </a>
@@ -37,11 +38,20 @@
                             </a>
                         </div>
                     </li>
+
+                    <li class="mo_nav-item">
+                        <div class="DivItem">
+                            <a href="#" onclick="mostrarCadastro()">
+                                <span class="mo_icon"><i class="fa-solid fa-database"></i></span>
+                                <span class="mo_text">ADM - CADASTRO</span>
+                            </a>
+                        </div>
+                    </li>
         
             </ul>
         </nav>
         <nav>
-            <div class="conteiner">
+            <div class="conteiner" id="conteudo">
                 <div class="texto">
                     <h1><i class="fa-solid fa-user"></i>Bem Vindo(a), <?php echo $_SESSION['nome'];?>!</h1>
                     <p>Confira o consumo e o status da água do seu prédio.</p>

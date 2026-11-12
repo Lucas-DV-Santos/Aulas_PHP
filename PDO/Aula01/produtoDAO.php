@@ -18,7 +18,6 @@ Class ProdutoDAO {
         $sql = "SELECT * FROM produtos";
         $comando = $this->conexao->query($sql);
         return $comando->fetchAll();
-
     }
     
     // Metodo de cadastro no banco de dados
