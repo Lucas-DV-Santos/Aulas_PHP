@@ -2,7 +2,7 @@ const conteudoOriginal = document.getElementById("conteudo").innerHTML;
 
 function mostrarCadastro() {
 
-    document.getElementById("conteudo").innerHTML = "<h1>Alo!</h1>";
+    document.getElementById("conteudo").innerHTML = "<h1>Batatas!</h1>";
 
 }
 
