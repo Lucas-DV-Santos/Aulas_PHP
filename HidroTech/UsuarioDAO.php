@@ -15,7 +15,7 @@ Class UsuarioDAO{
         return $comando->fetchAll();
     }
 
-    public function login($email, $senha){
+    public function login($email, $senha, $nome){
         $sql = 'SELECT * FROM usuario WHERE email = :email';
 
         $comando = $this->conexao->prepare($sql);

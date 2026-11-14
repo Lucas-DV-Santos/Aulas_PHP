@@ -4,12 +4,13 @@ require_once "UsuarioDAO.php";
 
 $email = $_POST['email'];
 $senha = $_POST['senha'];
+$nome = $_POST['nome'];
 
 
 $usuarioDAO = new UsuarioDAO();
-$dadosUser = $usuarioDAO->login($email, $senha);
+$dadosUser = $usuarioDAO->login($email, $senha, $nome);
 
-if($senha != $dadosUser['senha']){
+if(!$dadosUser || $senha != $dadosUser['senha'] || $nome != $dadosUser['nome']){
     header("Location: index.html");
     exit();
 }
