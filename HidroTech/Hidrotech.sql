@@ -73,3 +73,4 @@ INNER JOIN sensor
 ON medicao.fk_id_sensor = sensor.id
 INNER JOIN usuario
 ON usuario.id = medicao.id;
+
