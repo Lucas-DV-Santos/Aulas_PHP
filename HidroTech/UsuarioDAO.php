@@ -23,13 +23,31 @@ Class UsuarioDAO{
         $comando->execute();
         return $comando->fetch();
     }
+
+    public function cadastro($nome ,$email, $senha, $acesso){
+
+        $sqlVerifica = "SELECT id FROM usuario WHERE email = :email";
+        $stmtVerifica = $this->conexao->prepare($sqlVerifica);
+        $stmtVerifica->bindValue(':email', $email);
+        $stmtVerifica->execute();
+
+        if ($stmtVerifica->fetch()) {
+            header('Location: UsuarioJaCadastrado.php');
+            exit();
+        }
+
+        $sql = 'INSERT INTO usuario (nome, email, senha, acesso)
+                VALUES (:nome, :email,:senha,:acesso)';
+
+        $comando = $this->conexao->prepare($sql);
+
+        $comando->bindValue(':nome', $nome);
+        $comando->bindValue(':email', $email);
+        $comando->bindValue(':senha', $senha);
+        $comando->bindValue(':acesso', $acesso);
+
+        return $comando->execute();
+    
 }
-
-
-
-
-
-
-
-
+}
 ?>

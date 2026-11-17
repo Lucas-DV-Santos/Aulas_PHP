@@ -14,7 +14,7 @@
 <body class="mo_body">
 
     <main class="mo_main">
-        <nav class="mo_sidebar">
+        <nav class="    mo_sidebar">
             <div class="mo_logo">
                 <img src="https://lh3.googleusercontent.com/d/1aKopSV6i7SPvYhGLzGmJc5Q3MF7Y6Y1b" alt="Logo">
             </div>
