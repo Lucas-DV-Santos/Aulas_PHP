@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário de cadastro de produtos</title>
+</head>
+<body>
+    <h2>Formulário de cadastro de produtos</h2>
+    <form action="processa.php" method="POST">
+        <label for="nome">Nome do produto:</label><br>
+        <input type="text" id="nome" name="nome" required><br><br>
+
+        <label for="preco">Preço unitário:</label><br>
+        <input type="number" id="preco" name="preco" required><br><br>
+
+        <label for="quantidade">Quantidade:</label><br>
+        <input type="number" id="quantidade" name="quantidade" min="1" required><br><br>
+        
+        <button type="submit">Enviar Dados</button>
+    </form>
+</body>
+</html>
