@@ -22,7 +22,7 @@ $_SESSION['email'] = $dadosUser['email'];
 $_SESSION['acesso'] = $dadosUser['acesso'];
 
 if($dadosUser['acesso'] == 'man'){
-    header("Location: Manutencao_DashBoard.php");
+    header("Location: SimuladorDeNivel/Manutencao_DashBoard.php");
 }elseif($dadosUser['acesso'] == 'mor'){
     header("Location: Morador_DashBoard.php");
 }elseif($dadosUser['acesso'] == 'adm'){
