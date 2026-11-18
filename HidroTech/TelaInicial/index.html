@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>HIDROTECH</title>
+    <link rel="shortcut icon" href="imagens/Logo Hidrotech_ Inovação em Água.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="cabecalho">
+        <img src="imagens/Logo_Hidrotech_em_Azul_e_Branco-removebg-preview.png" alt="" class="img_cabecalho">
+        <nav class="nav_links">
+            <ul class="links">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="Cadastro_Dashboards/TelaLogin.html">Cadastro</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>  
+        <section class="banner">
+            <img src="imagens/imagem_caixas_predio.png" alt="" class="caixa_predio">
+            <canvas class="particulas"></canvas>
+        </section>
+        <section class="sensor">
+            <div class="ultrassonico">
+                <img src="imagens/sensor_ultassonico.png" alt="">
+                <p><em>Utilizando sensores ultrassônicos que medem a distância entre o dispositivo e a superfície da água, permitindo acompanhar continuamente o nível do reservatório!!!</em></p>
+            </div>
+        </section>
+        <section>
+            <h2 class="titulo">Nossa Empresa</h2>
+            <p class="conteudo">O principal objetivo da empresa Hidrotech é desenvolver um sistema inteligente focado no monitoramento do nível d’água das caixas d’águas de condomínios residenciais. A partir disso, buscamos permitir um acompanhamento mais eficiente, com informações e alertas que ajudem a identificar situações críticas. </p>
+            <section class="caixa">
+                <article class="bloco1">
+                    <h3>Solução para o problema</h3>
+                    <div class="funcoes">
+                        <p>Utilizar o sensor ultrassônico conectado a um ESP32(microcontrolador) para coletar e processar as informações sobre o nível d’água.</p>
+                    </div>
+                </article>
+                <article class="bloco2">
+                    <h3>Principais funcionalidades</h3>
+                    <div class="funcoes">
+                        <img src="imagens/icon_positivo.png" alt="">
+                        <p>Alertas de problemas que podem ocorrer;</p>
+                    </div>
+                    <div class="funcoes">
+                        <img src="imagens/icon_positivo.png" alt="">
+                        <p>Monitoramento da caixa d’água em tempo real;</p>
+                    </div>
+                    <div class="funcoes">
+                         <img src="imagens/icon_positivo.png" alt="">
+                        <p>Controle de acesso para moradores e técnicos;</p>
+                    </div>
+                </article>
+                <article class="bloco3">
+                    <h3>Tecnologias Utilizadas</h3>
+                    <div class="funcoes2">
+                        <img src="imagens/filtro.png" alt="">
+                        <p>Configuração de Limites e Alertas</p>
+                    </div>
+                    <div class="funcoes2">
+                        <img src="imagens/wifi.png" alt="">
+                        <p>Telemetria e IoT</p>
+                    </div>
+                     <div class="funcoes2">
+                        <img src="imagens/backup.png" alt="" >
+                        <p>Processamento e Sincronização</p>
+                    </div>
+                    <div class="funcoes2">
+                        <img src="imagens/interface.png" alt="">
+                        <p>Interface e Usabilidade</p>
+                    </div>
+                    
+                </article>
+            </section>
+        </section>
+    </main>
+    <footer class="rodape">
+        <p>&copy Empresa Hidrotech 2026</p>
+    </footer>
+    
+    <script src="particulas.js"></script>
+</body>
+</html>

@@ -1,3 +1,4 @@
+-- Active: 1795009438430@@127.0.0.1@3306@sistema_caixa_agua
 CREATE DATABASE Sistema_caixa_agua;
 USE Sistema_caixa_agua;
 
@@ -74,3 +75,8 @@ ON medicao.fk_id_sensor = sensor.id
 INNER JOIN usuario
 ON usuario.id = medicao.id;
 
+SELECT * FROM usuario;
+
+
+INSERT INTO usuario (id, nome, email, senha, acesso) VALUES
+(21, 'root', 'root@gmail.com', 11111, 'root');

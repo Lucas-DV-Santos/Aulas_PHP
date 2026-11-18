@@ -11,7 +11,7 @@ $usuarioDAO = new UsuarioDAO();
 $dadosUser = $usuarioDAO->login($email, $senha, $nome);
 
 if(!$dadosUser || $senha != $dadosUser['senha'] || $nome != $dadosUser['nome']){
-    header("Location: index.html");
+    header("Location: TelaLogin.html");
     exit();
 }
 
