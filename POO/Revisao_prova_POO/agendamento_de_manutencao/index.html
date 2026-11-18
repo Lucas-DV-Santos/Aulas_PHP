@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Agendamento de Manutenção</title>
+</head>
+<body>
+    <h2>Cálculo de Tempo de Manutenção</h2>
+    <form action="processa.php" method="POST">
+        <label for="responsavel">Nome do responsável:</label><br>
+        <input type="text" id="responsavel" name="responsavel" required><br><br>
+
+        <label for="equipamento">Nome do equipamento:</label><br>
+        <input type="text" id="equipamento" name="equipamento" required><br><br>
+
+        <label for="quantidade">Quantidade de equipamentos:</label><br>
+        <input type="number" id="quantidade" name="quantidade" min="1" required><br><br>
+
+        <label>Tipo de serviço:</label><br>
+        <input type="radio" id="preventiva" name="tipo_servico" value="preventiva" required>
+        <label for="preventiva">Manutenção Preventiva (2h/equipamento)</label><br>
+
+        <input type="radio" id="corretiva" name="tipo_servico" value="corretiva">
+        <label for="corretiva">Manutenção Corretiva (4h/equipamento)</label><br>
+
+        <input type="radio" id="instalacao" name="tipo_servico" value="instalacao">
+        <label for="instalacao">Instalação de Equipamentos (3h/equipamento + 1h preparo)</label><br><br>
+
+        <button type="submit">Calcular Tempo Estimado</button>
+    </form>
+</body>
+</html>
