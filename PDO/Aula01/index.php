@@ -26,6 +26,9 @@ $informacoesProdutos = $produto->listar();
                 <th>Nome</th>
                 <th>Preço</th>
                 <th>Quantidade</th>
+                <th>Editar</th>
+                <th>Editar</th0>
+                <th>Excluir</th0>
             </tr>
         </thead>
 
@@ -38,6 +41,16 @@ $informacoesProdutos = $produto->listar();
                     <td><?=$produto['nome']?></td>
                     <td><?=$produto['preco']?></td>
                     <td><?=$produto['quantidade']?></td>
+                    <!-- Visualizar -->
+                    <td><a href="vizualizar.php?id=<?= $produto['id'] ?>">Visualizar</a></td>
+                    <!-- Editar -->
+                    <td>
+                        <a href="editar.php?id=<?= $produto['id'] ?>">Editar</a>
+                    </td>
+                    <!-- Excluir -->
+                    <td>
+                        <a href="editar.php?id=<?= $produto['id'] ?>">Excluir</a>
+                    </td>
                 </tr>
             <?php
             }

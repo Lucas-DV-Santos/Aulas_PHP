@@ -58,14 +58,14 @@
                         <hr>
 
                         <div class="linha1-simulador">
+                            
                             <div class="Caixa_caixadeagua" id="Caixa_caixadeagua">
-                                <div class="reservatorio">
+                                <div class="reservatorio" id="reservatorio">
                                      <div class="agua" id="agua"></div>
-                                     <div></div>
-                                    
-                                     
-
                                 </div>
+                                <p id="porcentagem">50%</p>
+                                <h6>Nivel Atual</h6>
+                                <hr>
                             </div>
 
                             <div class="Status_reservatorio" id="Status_reservatorio">
@@ -76,6 +76,28 @@
                                     <p class="p3" id="funcionamento">Funcionamento Adequado</p>
                                 </div>
                             </div>
+                        </div>
+
+                        <div class="linha2simulador-nivel">
+                            <form action="enviar_alerta.php" method="POST" class="form-simulador">
+    
+                                <div class="range-container">
+                                    <label for="range-agua">
+                                        <strong>Controle de simulação</strong><br>
+                                        <span>Altere o nível de água do reservatório:</span>
+                                    </label>
+      
+                                    <div class="controle-wrapper">
+                                        <input type="range" name="nivel_agua" id="range-agua" min="0" max="100" value="50" oninput="document.getElementById('valor-porcentagem').value = this.value + '%'">
+                                        <output id="valor-porcentagem" for="range-agua" class="output-porc">50%</output>
+                                    </div>
+                                </div>
+
+                                <div class="enviar-porcentagem">
+                                    <button type="submit">Enviar Alerta</button>
+                                </div>
+
+                            </form>
                         </div>
                 </div>
             </div>

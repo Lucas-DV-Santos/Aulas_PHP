@@ -58,12 +58,12 @@ body {
     background-color: white;
     margin-left: 270px;
     margin-top: 70px;
-    margin-bottom: 70px;
+    margin-bottom: 30px;
     border-radius: 40px;
     display: flex;
     flex-direction: column;
     padding-top: 30px;
-    width: 1500px;
-    height: 800px;
+    width: 1000px;
+    height: 700px;
 }
 

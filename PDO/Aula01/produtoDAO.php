@@ -33,5 +33,33 @@ Class ProdutoDAO {
             "quantidade" => $quantidade
         ]);
     }
+
+    public function buscarPorId($id){
+
+        $sql = "SELECT * FROM produtos WHERE id = :id";
+
+        $comandoId = $this->conexao->prepare($sql);
+
+        $comandoId->execute([
+            "id" => $id
+        ]);
+
+        return $comandoId->fetch();
+    }
+
+    public function atualizarProduto($id, $nome, $preco, $quantidade){
+        
+        $sql = "UPDATE produtos SET nome = :nome, preco = :preco, quantidade = :quantidade
+        WHERE id = :id";
+
+        $comando = $this->conexao->prepare($sql);
+
+        $comando->execute([
+            "nome" => $nome,
+            "preco" => $preco,
+            "quantidade" => $quantidade,
+            "id" => $id
+        ]);
+    }
 }
 ?>
