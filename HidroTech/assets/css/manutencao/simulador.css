@@ -20,24 +20,6 @@
     margin: 35px 0;
 }
 
-.tanque {
-    width: 170px;
-    height: 280px;
-    border: 5px solid #173d69;
-    border-radius: 20px 20px 30px 30px;
-    position: relative;
-    overflow: hidden;
-    background: #f5faff;
-}
-
-.agua {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 50%;
-    background: linear-gradient(#48b9f5, #0875c9);
-    transition: height 0.3s ease;
-}
 
 .dados h2 {
     font-size: 45px;
