@@ -16,7 +16,7 @@ class Carro extends Veiculo{
 
 // $veiculo = new Veiculo();
 
-$carro = new Carro();
+$carro = new Veiculo();
 $carro->Mover();
 $carro->Acelerar();
 ?>

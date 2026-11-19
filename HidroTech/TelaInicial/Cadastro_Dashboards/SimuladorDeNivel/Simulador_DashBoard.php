@@ -52,35 +52,34 @@
         <nav>
             <div class="conteiner">
                 <div class="simulador">
-                    <h1>Simulador de nível da água</h1>
-                    <p>Altere o nível de água do reservatório.</p>
+                        <h1>Simulador de nível da água</h1>
+                        <p>Altere o nível de água do reservatório.</p>
 
-                <div class="area-simulador">
+                        <hr>
 
-                <div class="tanque">
-                    <div class="agua" id="agua"></div>
+                        <div class="linha1-simulador">
+                            <div class="Caixa_caixadeagua" id="Caixa_caixadeagua">
+                                <div class="reservatorio">
+                                     <div class="agua" id="agua"></div>
+                                     <div></div>
+                                    
+                                     
+
+                                </div>
+                            </div>
+
+                            <div class="Status_reservatorio" id="Status_reservatorio">
+                                <img src="imagens/check.png" alt="Ícone de confirmação normal" width="80" height="80" id="IconStatus">
+                                <div class="textos_Status_reservatorio">
+                                    <p class="p1">Status do reservatório</p>
+                                    <p class="p2" id="Analise_Aguardando">Normal</p>
+                                    <p class="p3" id="funcionamento">Funcionamento Adequado</p>
+                                </div>
+                            </div>
+                        </div>
                 </div>
-
-                <div class="dados">
-                    <h2 id="porcentagem">50%</h2>
-                    <p id="status">Nível normal</p>
-                </div>
-
             </div>
 
-            <form action="SalvarSimulacao.php" method="POST">
-
-                <label for="nivel">Nível do reservatório</label>
-
-                <input type="range" name="nivel" id="nivel"
-                min="0" max="100" value="50">
-
-                <button type="submit">Salvar simulação</button>
-
-            </form>
-        </div>
-
-        </div>
         </nav>
     </main>
 </body>

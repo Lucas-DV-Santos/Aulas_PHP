@@ -1,0 +1,69 @@
+
+
+body {
+    background-image: url("https://lh3.googleusercontent.com/d/15TtzDeg343q_OKJ-rfIFlAIPF4kbGFAx");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    margin: 0;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+}
+
+.mo_logo img {
+    margin: 15px;
+    width: 150px;
+}
+
+.mo_icon i {
+    margin-right: 10px;
+    color: white;
+}
+
+.mo_nav-links {
+    list-style-type: none;
+}
+
+.mo_sidebar {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+}
+
+.DivItem a {
+    color: white;
+    text-decoration: none;
+}
+
+.DivItem a:hover {
+    background-color: #ffffff;
+    color: black;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 3px 3px 0px 0px rgb(1, 2, 59);
+}
+
+.DivItem a:hover i {
+    color: black;
+}
+
+.mo_main {
+    display: flex;
+}
+
+.conteiner {
+    background-color: white;
+    margin-left: 270px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    width: 1500px;
+    height: 800px;
+}
+

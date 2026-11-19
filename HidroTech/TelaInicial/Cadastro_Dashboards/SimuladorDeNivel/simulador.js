@@ -1,1 +1,0 @@
-const nivel = document.getElementById("nivel")

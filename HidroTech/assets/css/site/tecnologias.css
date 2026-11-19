@@ -1,0 +1,19 @@
+.funcoes2 img{
+    padding-top: 10px;
+    margin-left: 15px;
+    width: 30px;
+    height: 30px;
+
+}
+
+.funcoes2{
+    margin-bottom: 5px;
+    display: flex;
+}
+
+.funcoes2 p{
+    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
