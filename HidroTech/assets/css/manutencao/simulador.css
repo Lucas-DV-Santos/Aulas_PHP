@@ -13,23 +13,9 @@
     color: #173d69;
 }
 
-.area-simulador {
-    display: flex;
-    align-items: center;
-    gap: 50px;
-    margin: 35px 0;
-}
 
 
-.dados h2 {
-    font-size: 45px;
-    color: #173d69;
-    margin-bottom: 5px;
-}
 
-.dados p {
-    color: #555;
-}
 
 .simulador form {
     display: flex;
@@ -52,22 +38,7 @@
     cursor: pointer;
 }
 
-.alerta {
-    margin-left: 60px;
-    width: 300px;
-    height: 300px;
-    padding: 30px;
-    box-sizing: border-box;
-    border-radius: 12px;
-    background-color: #7fbdff;
-    margin-left: 250px;
-}
 
-.area-simulador {
-    display: flex;
-    align-items: center;
-    gap: 50px;
-}
 
 
 .linha1-simulador{

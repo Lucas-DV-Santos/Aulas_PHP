@@ -1,21 +1,3 @@
-.conteiner_cadastro{
-    background-color: #ffffff;
-    margin-left: 270px;
-    margin-top:70px;
-    margin-bottom: 70px;
-    width: 1300px;
-    height: 700px;
-    padding: 50px;
-    border-radius: 40px;
-    display: flex;
-    flex-direction: column;
-    padding-top: 30px;
-    align-items: center;
-    
-    background-image: url('https://lh3.googleusercontent.com/d/1WkqhzqH4u1MQgC7VL2wGNN9m_cKD_M2X    ');
-    background-size: 100% 1300px 700px;
-    background-position: center; 
-}
 
 .caixa_cadastro h1 {
     color: darkblue;

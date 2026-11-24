@@ -1,6 +1,6 @@
 <?php
 
-require_once __DIR__ . "/../../includes/UsuarioDAO.php";
+require_once __DIR__ . "/../../includes/dao/UsuarioDAO.php";
 
 $email = $_POST['email'];
 $senha = $_POST['senha'];
@@ -10,10 +10,7 @@ $nome = $_POST['nome'];
 $usuarioDAO = new UsuarioDAO();
 $dadosUser = $usuarioDAO->login($email, $senha, $nome);
 
-if(!$dadosUser || $senha != $dadosUser['senha'] || $nome != $dadosUser['nome']){
-    header("Location: ../../pages/login.html");
-    exit();
-}
+
 
 session_start();
 $_SESSION['nome'] = $dadosUser['nome'];

@@ -1,5 +1,5 @@
 <?php
-require_once("conexao.php");
+require_once __DIR__ . "/../Conexao.php";
 Class UsuarioDAO{
    private $conexao;
 
@@ -32,7 +32,7 @@ Class UsuarioDAO{
         $stmtVerifica->execute();
 
         if ($stmtVerifica->fetch()) {
-            header('Location: UsuarioJaCadastrado.php');
+            header('Location: usuario_ja_cadastrado.php');
             exit();
         }
 

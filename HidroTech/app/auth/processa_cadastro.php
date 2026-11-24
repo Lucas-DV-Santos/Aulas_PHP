@@ -1,6 +1,6 @@
 <?php
 
-require_once __DIR__ . "/../../includes/UsuarioDAO.php";
+require_once __DIR__ . "/../../includes/dao/UsuarioDAO.php";
 
 $email = $_POST['email'];
 $senha = $_POST['senha'];

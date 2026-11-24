@@ -1,4 +1,10 @@
-<?php session_start()?>
+<?php session_start();
+    require_once("../../includes/dao/MedicaoDAO.php");
+    $medicaoDAO = new MedicaoDAO();
+    $medicao = $medicaoDAO->GetMedicao();
+
+
+?>
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -6,7 +12,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Morador</title>
-    <link rel="stylesheet" href="../../assets/css/manutencao.css">
+    <link rel="stylesheet" href="../../assets/css/manutencao/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body class="mo_body">
@@ -60,14 +66,22 @@
                         <img src="https://lh3.googleusercontent.com/d/174ieGGQu0GnZWYBnuVj-_ut5xGbGkhTH" alt="imagem">
 
                             <div class="div1_article">
-                                <h2 class="h2">Gasto Total do prédio</h2>
-                                <h1 class="h1">12.750 L</h1>
+                                <h2 class="h2">Ultimo Alerta: </h2>
+                                <h3>
+                                    <?php
+                                        if ($medicao) {
+                                            echo $medicao['percentual'] . "%" . '<br><br>';
+                                            echo $medicao["data_hora"];
+                                        } else {
+                                            echo "Aguardando medição";
+                                        }
+                                    ?>
+                                </h3>
                             </div>
                     </article>
 
-                    <article class="article2">
-                        <h1>Tabela 2</h1>
-                    </article>
+                    
+                    
                 </section>
             </div>
         </nav>

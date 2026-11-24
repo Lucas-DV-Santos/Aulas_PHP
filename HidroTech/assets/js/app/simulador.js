@@ -18,19 +18,19 @@ range_agua.addEventListener('input', function(){
 
     if (aumentar_agua <= 20) {
         Analise_Aguardando.innerText = 'Estado crítico';
-        IconStatus.src = '/Aulas_PBE/HidroTech/assets/img/app/icone_critico_80x80.png';
+        IconStatus.src = '../../assets/img/app/icone_critico_80x80.png';
         Analise_Aguardando.style.color = 'red';
         funcionamento.innerText = 'Funcionamento crítico detectado';
         
     }else if (aumentar_agua > 20 && aumentar_agua < 70) {
         Analise_Aguardando.innerText = 'Estado Intermediário';
-        IconStatus.src = '/Aulas_PBE/HidroTech/assets/img/app/icone_intermediario_80x80.png';
+        IconStatus.src = '../../assets/img/app/icone_intermediario_80x80.png';
         Analise_Aguardando.style.color = 'yellow';
         funcionamento.innerText = 'Estado de atenção detectado';
         
     }else if (aumentar_agua >= 70) {
         Analise_Aguardando.innerText = 'Estado Normal';
-        IconStatus.src = '/Aulas_PBE/HidroTech/assets/img/app/check.png';
+        IconStatus.src = '../../assets/img/app/check.png';
         Analise_Aguardando.style.color = 'green';
         funcionamento.innerText = 'Funcionamento Adequado';
         
