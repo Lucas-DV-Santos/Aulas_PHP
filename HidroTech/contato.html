@@ -3,23 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/site/index.css">
+    <link rel="stylesheet" href="assets/css/site/contato.css">
     
     <title>HIDROTECH</title>
-    <link rel="shortcut icon" href="assets/img/site/logo_hidrotech.png" type="image/x-icon">
+    <link rel="shortcut icon" href="imagens/Logo Hidrotech_ Inovação em Água.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="cabecalho">
-        <img src="assets/img/site/logo_hidrotech_azul_branco.png" alt="" class="img_cabecalho">
+        <img src="imagens/Logo_Hidrotech_em_Azul_e_Branco-removebg-preview.png" alt="" class="img_cabecalho">
         <nav class="nav_links">
             <ul class="links">
                 <li><a href="index.html">Início</a></li>
-                <li><a href="pages/login.html">Cadastro</a></li>
+                <li><a href="Cadastro_Dashboards/TelaLogin.html">Cadastro</a></li>
                 <li><a href="contato.html">Contato</a></li>
             </ul>
         </nav>
     </header>
-    <main>  
+    <main> 
+        <h2>Nossos Contatos</h2>
+        <section class="info">
+            <div class="local">
+                <h3>Local</h3>
+                <div class="maps">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3117.0272254907604!2d-47.27788437603108!3d-21.710841265965822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b7efc1347e3265%3A0x53eb3a234374dc72!2sServi%C3%A7o%20Social%20da%20Ind%C3%BAstria-SESI!5e0!3m2!1spt-BR!2sbr!4v1795487604369!5m2!1spt-BR!2sbr" width="350" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                </div>
+            </div>
+            <div class="contatos">
+                <h3>Mensagem</h3>
+                
+                <form action="https://formsubmit.co/hidrotech.solucoeshidricas@gmail.com" method="POST" class="form">
+
+                        <input type="hidden" name="_subject" value="Nova mensagem - HidroTech">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_template" value="table">
+
+                        <label for="nome"></label>
+                        <input type="text" name="nome" id="nome"
+                            placeholder="Nome" required>
+
+                        <label for="email"></label>
+                        <input type="email" name="email" id="email"
+                            placeholder="Email" required>
+
+                        <label for="telefone"></label>
+                        <input type="tel" name="telefone" id="telefone"
+                                placeholder="Telefone">
+
+                        <label for="mensagem"></label>
+                        <textarea name="mensagem" id="mensagem"
+                                cols="30" rows="5"
+                                placeholder="Mensagem" required></textarea>
+
+                        <button type="submit" class="botao">Enviar</button>
+                    </form>
+
+            </div>
+        </section>
+       <footer class="rodape">
+        <p>&copy Empresa Hidrotech 2026</p>
+    </footer>
+    

@@ -61,5 +61,15 @@ Class ProdutoDAO {
             "id" => $id
         ]);
     }
+
+    public function excluirPorId($id){
+        $sql = "DELETE FROM produtos WHERE id = :id";
+
+        $comando = $this->conexao->prepare($sql);
+        $comando->execute([
+            "id" => $id
+        ]);
+    }
+    
 }
 ?>

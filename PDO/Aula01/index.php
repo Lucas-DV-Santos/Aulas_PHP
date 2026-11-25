@@ -49,7 +49,10 @@ $informacoesProdutos = $produto->listar();
                     </td>
                     <!-- Excluir -->
                     <td>
-                        <a href="editar.php?id=<?= $produto['id'] ?>">Excluir</a>
+                        <form action="excluir.php" method="post">
+                            <input type="hidden" value="<?= $produto['id'] ?>" name="id">
+                            <button type="submit">Excluir</button>
+                        </form>
                     </td>
                 </tr>
             <?php
@@ -59,5 +62,7 @@ $informacoesProdutos = $produto->listar();
     </table>
     <br>
     <a href="cadastrar.php">Cadastrar novo produto</a>
+    <br><br>
+    <a href="cadastrarPedido.php">Cadastrar novo pedido</a>
 </body>
 </html>
