@@ -1,8 +1,8 @@
 <?php session_start();
     require_once("../../includes/dao/MedicaoDAO.php");
     $medicaoDAO = new MedicaoDAO();
-    $medicao = $medicaoDAO->GetMedicao();
-    $medicao2 = new MedicaoDAO();
+      $medicao = $medicaoDAO->GetMedicao();
+      $medicao2 = new MedicaoDAO();
     $medicao2 = $medicaoDAO->Get10Medicao();
 
 ?>
@@ -23,7 +23,7 @@
     <main class="mo_main">
         <nav class="mo_sidebar">
             <div class="mo_logo">
-                <img src="../../assets/img/site/logo_hidrotech_horizontal.png" alt="Logo">
+                <img src="https://lh3.googleusercontent.com/d/1aKopSV6i7SPvYhGLzGmJc5Q3MF7Y6Y1b" alt="Logo">
             </div>
             <ul class="mo_nav-links">
         
@@ -57,7 +57,7 @@
 
                 <section class="sessao">
                     <article class="article1">
-                        <img src="../../assets/img/app/icone_gota.png" alt="imagem">
+                        <img src="https://lh3.googleusercontent.com/d/174ieGGQu0GnZWYBnuVj-_ut5xGbGkhTH" alt="imagem">
 
                             <div class="div1_article">
                                 <h2 class="h2">Ultimo Alerta: </h2>
