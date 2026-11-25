@@ -5,7 +5,7 @@
   min-height: 100vh;
   min-height: 100vh;
   overflow: hidden; 
-  background-image: url('https://lh3.googleusercontent.com/d/15TtzDeg343q_OKJ-rfIFlAIPF4kbGFAx');
+  background-image: url('../../img/fundos/fundo_hidrotech.png');
   background-size: cover; 
   background-position: center;  
   background-repeat: no-repeat; 
@@ -53,15 +53,15 @@
 .conteiner{
     background-color: #ffffff;
     margin-left: 270px;
-    margin-top:70px;
     margin-bottom: 70px;
     width: 1100px;
     height: 600px;
     padding: 40px;
-    border-radius: 40px;
     display: flex;
     flex-direction: column;
     padding-top: 30px;
+    padding-right: 130px;
+    padding-bottom: 800px;
 }
 
 .texto{

@@ -2,6 +2,8 @@
 require_once("../../includes/dao/MedicaoDAO.php");
       $medicaoDAO = new MedicaoDAO();
       $medicao = $medicaoDAO->GetMedicao();
+      $medicao2 = new MedicaoDAO();
+    $medicao2 = $medicaoDAO->Get10Medicao();
 ?>
 
 <!DOCTYPE html>
@@ -12,15 +14,16 @@ require_once("../../includes/dao/MedicaoDAO.php");
     <title>ADM</title>
     <link rel="stylesheet" href="../../assets/css/app/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
+    <script src="../../assets/js/app/grafico.js" defer></script>
     <script src="../../assets/js/app/adm.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body class="mo_body">
 
     <main class="mo_main">
         <nav class="    mo_sidebar">
             <div class="mo_logo">
-                <img src="https://lh3.googleusercontent.com/d/1aKopSV6i7SPvYhGLzGmJc5Q3MF7Y6Y1b" alt="Logo">
+                <img src="../../assets/img/site/logo_hidrotech_horizontal.png" alt="Logo">
             </div>
             <ul class="mo_nav-links">
         
@@ -63,7 +66,7 @@ require_once("../../includes/dao/MedicaoDAO.php");
 
                 <section class="sessao">
                     <article class="article1">
-                        <img src="https://lh3.googleusercontent.com/d/174ieGGQu0GnZWYBnuVj-_ut5xGbGkhTH" alt="imagem">
+                        <img src="../../assets/img/app/icone_gota.png" alt="imagem">
 
                             <div class="div1_article">
                                 <h2 class="h2">Ultimo Alerta: </h2>
@@ -79,11 +82,18 @@ require_once("../../includes/dao/MedicaoDAO.php");
                                 </h3>
                             </div>
                     </article>
-
-                   
+                    <article class="article2">
+                        <div class="div2_article">
+                            <h2>Últimas medições</h2>
+                            <canvas id="graficoMedicoes"></canvas>
+                        </div>
+                    </article> 
                 </section>
             </div>
         </nav>
     </main>
+    <script>
+        const dadosMedicoes = <?php echo json_encode($medicao2); ?>;
+    </script>
 </body>
 </html>

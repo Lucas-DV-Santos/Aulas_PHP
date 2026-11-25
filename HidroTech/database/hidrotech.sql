@@ -1,4 +1,4 @@
--- Active: 1795039900426@@127.0.0.1@3306@sistema_caixa_agua
+-- Active: 1795009438430@@127.0.0.1@3306@sistema_caixa_agua
 CREATE DATABASE Sistema_caixa_agua;
 USE Sistema_caixa_agua;
 

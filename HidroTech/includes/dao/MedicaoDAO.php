@@ -39,7 +39,20 @@ Class MedicaoDAO{
     return $comando->fetch(PDO::FETCH_ASSOC);
     }
 
-    
+    public function Get10Medicao(){
+        $sql = "SELECT percentual, data_hora
+        FROM medicao
+        ORDER BY id DESC
+        LIMIT 10";
+
+        $comando = $this->conexao->query($sql);
+
+        $medicoes = [];
+
+        $medicoes = $comando->fetchAll(PDO::FETCH_ASSOC);
+
+        return array_reverse($medicoes);
+    }
 
 }
 

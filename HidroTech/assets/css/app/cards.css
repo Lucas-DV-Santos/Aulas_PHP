@@ -63,3 +63,29 @@
 
 }
 
+
+.sessao{
+    display: flex;
+    flex-direction: row;
+}
+
+.article2{
+    width: 100%;
+    height: 400px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.div2_article {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.div2_article canvas {
+    width: 100% !important;
+    height: 260px !important;
+}

@@ -7,7 +7,7 @@
   height: 100%;
   min-height: 100vh;
   overflow: hidden; 
-  background-image: url('https://lh3.googleusercontent.com/d/15TtzDeg343q_OKJ-rfIFlAIPF4kbGFAx');
+  background-image: url('../../img/fundos/fundo_hidrotech.png');
   background-size: cover; 
   background-position: center; 
   background-repeat: no-repeat; 
@@ -26,6 +26,11 @@
     gap: 8px;
     display: flex; 
     align-items: center;
+}
+
+.ca_imgCadastro img{
+    height: 50px;
+    width: 200px;
 }
 
 .ca_main {
